@@ -1,0 +1,42 @@
+
+const Login = () => {
+  return (
+    <div>
+      <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
+        <div className="w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-5">
+          <h1 className="text-3xl font-semibold text-semibold text-gray-300">
+            Login
+            <span className="text-blue-500"> ChatApp</span>
+          </h1>
+
+          <form>
+            <div>
+              <label htmlFor="" className="labe p-2">
+                <span className="text-base label-text">Username</span>
+              </label>
+              <input type="text" placeholder="Enter Username" className="input input-bordered w-full h-10" />
+            </div>
+
+            <div>
+              <label htmlFor="" className="labe p-2">
+                <span className="text-base label-text">Password</span>
+              </label>
+              <input type="password" placeholder="Enter Password" className="input input-bordered w-full h-10" />
+            </div>
+
+            <a href="#" className="text-sm hover:underline hover:text-blue-600 mt-2 inline-block">
+              {"Don't"} have an account?
+            </a>
+
+            <div>
+              <button className="btn btn-block btn-small mt-2 border border-slate-700">Login</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Login;
